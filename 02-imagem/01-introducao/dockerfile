@@ -1,0 +1,4 @@
+# Arquivo dockerfile
+FROM nginx:1.25-alpine
+LABEL maintainer="Vagner Bezerra vagner.bezerra@ifms.edu.br"
+RUN echo '<h1>Ola Mundo!!!</h1>' > /usr/share/nginx/html/index.html
