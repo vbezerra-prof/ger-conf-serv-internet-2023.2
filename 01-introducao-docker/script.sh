@@ -16,6 +16,7 @@ docker start NOME_DO_CONTAINER ou ID_DO_CONTAINER # Iniciar
 docker stop NOME_DO_CONTAINER ou ID_DO_CONTAINER # Parar
 docker restart NOME_DO_CONTAINER ou ID_DO_CONTAINER # Reiniciar
 docker rm NOME_DO_CONTAINER ou ID_DO_CONTAINER # Remover
+docker rename NOME_ATUAL_DO_CONTAINER NOVO_NOME_DO_CONTAINER # Renomear
 
 # Comando em lote para gerenciar containers a partir dos IDs (Dica: usar em ambiente de testes)
 docker start $(docker ps -a -q) # Iniciar todos
