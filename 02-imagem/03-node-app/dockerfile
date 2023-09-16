@@ -1,0 +1,9 @@
+FROM node:alpine3.18
+ENV NODE_ENV=production
+RUN mkdir -p /home/node/node-app
+WORKDIR /home/node/node-app
+COPY index.js ./
+COPY package.json ./
+RUN npm install
+EXPOSE 3000
+CMD ["node", "index.js"]

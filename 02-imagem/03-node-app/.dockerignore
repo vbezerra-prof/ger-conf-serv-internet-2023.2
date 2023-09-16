@@ -4,3 +4,6 @@ Dockerfile
 .dockerignore
 Readme.md
 comandos.png
+yarn.lock
+package-lock.json
+dockerfile-exemplo.png
