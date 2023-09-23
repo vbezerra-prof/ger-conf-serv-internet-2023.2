@@ -1,0 +1,4 @@
+FROM nginx:1.25-alpine
+
+COPY ./src/. /usr/share/nginx/html
+RUN chmod -R +x /usr/share/nginx/html
