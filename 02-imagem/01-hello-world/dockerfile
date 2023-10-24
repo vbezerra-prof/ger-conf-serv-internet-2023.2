@@ -1,0 +1,7 @@
+# Arquivo dockerfile
+FROM alpine:3.18
+
+RUN adduser dev;echo 'dev:' | chpasswd
+USER dev
+
+CMD ["echo", "Ola, Mundo!"]
