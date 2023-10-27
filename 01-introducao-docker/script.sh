@@ -4,6 +4,10 @@
 docker run hello-world # Cria um container de forma persistente
 docker run --rm hello-world # Cria um container temporário
 
+# Criar container de servidor web Nginx
+docker run -d -p 80:80 nginx:latest
+docker run --name nginx -d -p 80:80 nginx:latest
+
 # Listar os containers
 docker container list # Comando que lista todos os containers em execução
 docker ps -a # Comando que lista todos os containers, mesmo parados
