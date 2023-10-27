@@ -1,9 +1,8 @@
-FROM node:alpine3.18
+FROM node:18-alpine
 ENV NODE_ENV=production
-RUN mkdir -p /home/node/node-app
-WORKDIR /home/node/node-app
-COPY index.js ./
-COPY package.json ./
+WORKDIR /home/node/app
+COPY index.js .
+COPY package.json .
 RUN npm install
 EXPOSE 3000
 CMD ["node", "index.js"]

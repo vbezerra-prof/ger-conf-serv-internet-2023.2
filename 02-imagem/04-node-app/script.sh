@@ -2,7 +2,7 @@
 docker build -t node-app .
 
 # -> Listar Imagens
-docker image list
+docker image ls
 
 # -> # Criar container a partir da imagem criada
 docker run --name node-app-c1 --rm -p 8080:3000 -d node-app
