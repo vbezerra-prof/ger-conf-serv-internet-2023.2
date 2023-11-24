@@ -1,3 +1,5 @@
+# MariaDB: https://hub.docker.com/_/mariadb
+
 # -> Criar um volume para armazenar dados do mariadb
 docker volume create mariadb-volume
 
